@@ -1,0 +1,5 @@
+- id: jira-fmt
+  name: 'jira-fmt'
+  description: 'Check if commit msg contains Jira id. Fix if necessary'
+  entry: run-jira-fmt.sh 
+  language: 'script'
