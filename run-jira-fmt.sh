@@ -12,7 +12,7 @@
 set -e
 
 branch=$(git symbolic-ref --short HEAD)
-story=$(sed -E 's/(IN-[0-9]+){0,1}.*/\1/' <<< $branch)
+story=$(sed -E 's/(I[NT]-[0-9]+){0,1}.*/\1/' <<< $branch)
 
 if [[ -z $story ]]; then
    echo "Branch does not contain any IN reference"
